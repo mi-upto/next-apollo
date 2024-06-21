@@ -1,0 +1,18 @@
+.errorDisplay {
+  color: var(--color-error);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-m);
+  padding: var(--space-l);
+  margin: var(--space-m) var(--space-s);
+  align-items: center;
+  @media screen and (min-width: 768px) {
+    max-width: 600px;
+    margin: var(--space-m) auto;
+  }
+}
+
+.errorDescription {
+  color: var(--color-text-sub);
+  text-align: center;
+}

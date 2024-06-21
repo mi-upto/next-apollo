@@ -1,0 +1,10 @@
+.headWrap {
+  margin-bottom: var(--space-l);
+  @media screen and (min-width: 768px) {
+    margin-bottom: var(--space-2xl);
+  }
+}
+.header {
+  position: relative;
+  z-index: var(--zIndex-front);
+}

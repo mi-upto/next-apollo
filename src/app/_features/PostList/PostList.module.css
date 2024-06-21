@@ -1,0 +1,32 @@
+.categoryToggle {
+  margin: var(--space-m) 0;
+  margin-left: var(--space-m);
+  padding: var(--space-m) 0;
+  overflow-x: scroll;
+  @media screen and (min-width: 768px) {
+    overflow-x: inherit;
+    margin: var(--space-xl) 0;
+    margin-left: var(--space-m);
+    padding: var(--space-xl) 0;
+  }
+}
+
+.postList {
+  display: grid;
+  gap: var(--space-m);
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0 var(--space-m);
+  @media screen and (min-width: 768px) {
+    gap: var(--space-xl);
+  }
+  @media screen and (min-width: 1080px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.cardPostLink {
+  transition: var(--transition-opacity);
+  &:hover {
+    opacity: 0.8;
+  }
+}

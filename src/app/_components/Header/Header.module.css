@@ -1,0 +1,23 @@
+.header {
+  width: 100vw;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  background-color: var(--color-white);
+  box-shadow: var(--box-shadow-weak);
+  @media screen and (min-width: 768px) {
+    height: 64px;
+  }
+}
+
+.headerInner {
+  width: 100%;
+  max-width: var(--width-pc);
+  display: block;
+  margin: 0 auto;
+}
+
+.headerLink {
+  padding: var(--space-s);
+  display: inline-block;
+}

@@ -1,0 +1,188 @@
+:root {
+  /* primitive color */
+  --pink-900: #7f0069;
+  --pink-800: #a80074;
+  --pink-700: #bf007a;
+  --pink-600: #d50081;
+  --pink-500: #e80086;
+  --pink-400: #e6199c;
+  --pink-300: #e653b1;
+  --pink-200: #ea88c8;
+  --pink-100: #f0b7de;
+  --pink-50: #f9e2f2;
+  --purple-900: #3f008a;
+  --purple-800: #510397;
+  --purple-700: #5d0d9f;
+  --purple-600: #6918a8;
+  --purple-500: #721ead;
+  --purple-400: #8744bb;
+  --purple-300: #9c67c7;
+  --purple-200: #b794d7;
+  --purple-100: #d4bfe7;
+  --purple-50: #eee5f5;
+  --cyan-900: #004e86;
+  --cyan-800: #046da6;
+  --cyan-700: #047dba;
+  --cyan-600: #0c8fcd;
+  --cyan-500: #119ddb;
+  --cyan-400: #2fabe0;
+  --cyan-300: #50b9e4;
+  --cyan-200: #7fcdec;
+  --cyan-100: #b1e1f4;
+  --cyan-50: #e0f3fb;
+  --blue-900: #00215c;
+  --blue-800: #002d7e;
+  --blue-700: #083ea0;
+  --blue-600: #1552c2;
+  --blue-500: #2669e4;
+  --blue-400: #397fff;
+  --blue-300: #669cff;
+  --blue-200: #92b8ff;
+  --blue-100: #bfd5ff;
+  --blue-50: #ebf2ff;
+  --teal-900: #1d4044;
+  --teal-800: #234e52;
+  --teal-700: #285e61;
+  --teal-600: #2c7a7b;
+  --teal-500: #319795;
+  --teal-400: #38b2ac;
+  --teal-300: #4fd1c5;
+  --teal-200: #81e6d9;
+  --teal-100: #b2f5ea;
+  --teal-50: #e6fffa;
+  --green-900: #00642e;
+  --green-800: #008443;
+  --green-700: #00954e;
+  --green-600: #00a75b;
+  --green-500: #00b766;
+  --green-400: #33c27d;
+  --green-300: #62cd94;
+  --green-200: #93dbb2;
+  --green-100: #bee9d0;
+  --green-50: #e4f6ec;
+  --yellow-900: #554305;
+  --yellow-800: #775f0c;
+  --yellow-700: #997c17;
+  --yellow-600: #bb9a25;
+  --yellow-500: #ddb836;
+  --yellow-400: #ffd74a;
+  --yellow-300: #ffe073;
+  --yellow-200: #ffe99b;
+  --yellow-100: #fff2c4;
+  --yellow-50: #fffbed;
+  --orange-900: #ea4b04;
+  --orange-800: #f36703;
+  --orange-700: #f97802;
+  --orange-600: #ff8800;
+  --orange-500: #ff9400;
+  --orange-400: #ffa424;
+  --orange-300: #ffb44c;
+  --orange-200: #ffca7f;
+  --orange-100: #ffdfb1;
+  --orange-50: #fff3e0;
+  --red-900: #9b004f;
+  --red-800: #bf0054;
+  --red-700: #d30056;
+  --red-600: #e9005a;
+  --red-500: #fa075c;
+  --red-400: #fc3a75;
+  --red-300: #fe608e;
+  --red-200: #ff8fae;
+  --red-100: #ffbbcf;
+  --red-50: #ffe4ec;
+  --blue-gray-900: #171923;
+  --blue-gray-800: #1a202c;
+  --blue-gray-700: #2d3748;
+  --blue-gray-600: #4a5568;
+  --blue-gray-500: #718096;
+  --blue-gray-400: #a0aec0;
+  --blue-gray-300: #cbd5e0;
+  --blue-gray-200: #e2e8f0;
+  --blue-gray-100: #edf2f7;
+  --blue-gray-50: #f7fafc;
+  --gray-900: #171923;
+  --gray-800: #1a202c;
+  --gray-700: #63625f;
+  --gray-600: #787673;
+  --gray-500: #a19f9b;
+  --gray-400: #c0beba;
+  --gray-300: #e3e1dd;
+  --gray-200: #f0efeb;
+  --gray-100: #f7f5f1;
+  --gray-50: #fcfaf6;
+  --neutrals-transparent: #ffffff00;
+  --neutrals-white: #ffffff;
+  --neutrals-black: #23221f;
+
+  /* semantic color */
+  --color-primary: var(--cyan-700);
+  --color-secondary: var(--yellow-200);
+
+  --color-border: var(--gray-200);
+  --color-text: var(--neutrals-black);
+  --color-text-sub: var(--gray-700);
+
+  /* global state */
+  --color-disabled: var(--gray-500);
+  --color-error: var(--color-red);
+  --color-success: var(--teal-500);
+
+  /* radius */
+  --radius-s: 4px;
+  --radius-m: 8px;
+  --radius-l: 12px;
+  --radius-full: 40px;
+
+  /* shadow */
+  --box-shadow-weak: 0px 4px 4px 0px rgba(192, 189, 189, 0.25);
+
+  /* space */
+  --space-3xl: 48px;
+  --space-2xl: 32px;
+  --space-xl: 24px;
+  --space-l: 20px;
+  --space-m: 16px;
+  --space-s: 12px;
+  --space-xs: 8px;
+  --space-2xs: 4px;
+
+  /* line-height */
+  --line-height-relaxed: 170%;
+  --line-height-normal: 150%;
+  --line-height-tight: 135%;
+  --line-height-base: 120%;
+  --line-height-none: 100%;
+
+  /* font-size */
+  --font-size-base: 16px;
+  --font-size-5xl: 3rem;
+  --font-size-4xl: 2.5rem;
+  --font-size-3xl: 2rem;
+  --font-size-2xl: 1.75rem;
+  --font-size-xl: 1.5rem;
+  --font-size-l: 1.25rem;
+  --font-size-m: 1rem;
+  --font-size-s: 0.875rem;
+  --font-size-xs: 0.75rem;
+  --font-size-2xs: 0.625rem;
+
+  /* device width */
+  --width-xsp: 320px;
+  --width-sp: 480px;
+  --width-tab: 768px;
+  --width-pc: 1280px;
+
+  /* z-index */
+  --zIndex-base: 0;
+  --zIndex-front: 1;
+  --zIndex-back: -1;
+  --zIndex-portal: 10;
+
+  /* transition */
+  --transition-opacity: opacity 0.15s ease-out;
+  --transition-scale: scale 0.3s ease-out;
+
+  /* opacity */
+  --opacity-hover: 0.8;
+  --opacity-disabled: 0.4;
+}

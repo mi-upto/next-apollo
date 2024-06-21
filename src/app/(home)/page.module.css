@@ -1,0 +1,14 @@
+.container {
+  max-width: var(--width-pc);
+  margin: 0 auto;
+  margin-block-end: 80px;
+}
+
+.loadingContainer {
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 400px;
+}
