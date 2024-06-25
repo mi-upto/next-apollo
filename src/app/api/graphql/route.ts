@@ -1,8 +1,8 @@
 import { startServerAndCreateNextHandler } from '@as-integrations/next';
-import { TracksAPI } from './_tracks/datasources';
 import { ApolloServer } from '@apollo/server';
-import { tracksResolvers } from './_tracks/resolvers';
-import { tracksTypeDefs } from './_tracks/type-defs';
+import { TracksAPI } from './tracks/datasources';
+import { tracksResolvers } from './tracks/resolvers';
+import { tracksTypeDefs } from './tracks/schema';
 
 const server = new ApolloServer({
   typeDefs: tracksTypeDefs,

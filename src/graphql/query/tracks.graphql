@@ -1,5 +1,5 @@
 query GetTracks {
-  tracksForHome {
+  trackList {
     id
     title
     thumbnail

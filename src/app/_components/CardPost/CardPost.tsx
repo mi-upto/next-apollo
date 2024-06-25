@@ -1,7 +1,7 @@
 import React from 'react';
 import clsx from 'clsx';
 import styles from './CardPost.module.css';
-import type { Track } from '@/models';
+import type { Track } from '@/app/api/graphql/models';
 import Image from 'next/image';
 import { LikeButton } from '@/app/_features/LikeButton/LikeButton.client';
 

@@ -1,5 +1,4 @@
 'use client';
-// ^ this file needs the "use client" pragma
 
 import { HttpLink } from '@apollo/client';
 import { ApolloClient, InMemoryCache } from '@apollo/experimental-nextjs-app-support';
@@ -13,7 +12,6 @@ export const makeClient = () => {
     // you can override the default `fetchOptions` on a per query basis
     // via the `context` property on the options passed as a second argument
     // to an Apollo Client data fetching hook, e.g.:
-    // const { data } = useSuspenseQuery(MY_QUERY, { context: { fetchOptions: { cache: "force-cache" }}});
   });
 
   // use the `ApolloClient` from "@apollo/experimental-nextjs-app-support"

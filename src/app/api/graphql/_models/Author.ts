@@ -1,4 +1,4 @@
-export type Author = {
+export type AuthorModel = {
   id: string;
   name: string;
   photo: string;

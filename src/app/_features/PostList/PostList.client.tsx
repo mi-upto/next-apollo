@@ -3,38 +3,24 @@
 import React from 'react';
 import clsx from 'clsx';
 import styles from './PostList.module.css';
-import { gql, useQuery } from '@apollo/client';
+import { useSuspenseQuery } from '@apollo/client';
 import { CardPost } from '@/app/_components/CardPost';
 import Link from 'next/link';
-import { Track } from '@/models';
-
-const TRACKS = gql(`
-  query {
-    trackList {
-      id
-      title
-      thumbnail
-      length
-      modulesCount
-      author {
-        id
-        name
-        photo
-      }
-    }
-  }
-`);
+import { GetTracksDocument, GetTracksQuery } from '@/graphql/dist/client';
 
 type PostListProps = {
   className?: string;
 };
 export const PostList = ({ className, ...props }: PostListProps) => {
-  const { data } = useQuery(TRACKS);
-  console.log('data', data);
+  const { data: queryData } = useSuspenseQuery<GetTracksQuery>(GetTracksDocument, {
+    // context: { fetchOptions: { cache: 'force-cache' } },
+  });
+  const trackList = [...queryData.trackList];
+
   return (
     <div className={clsx(className, styles.container)} {...props}>
       <div className={styles.postList}>
-        {data?.trackList.map((track: Track) => {
+        {trackList.map((track) => {
           return (
             <Link href={`/tracks/${track.id}`} key={track.id} className={styles.cardPostLink}>
               <CardPost

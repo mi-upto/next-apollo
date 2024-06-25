@@ -1,4 +1,6 @@
-export const tracksResolvers = {
+import { Resolvers } from '@/app/api/graphql/types';
+
+export const tracksResolvers: Resolvers = {
   Query: {
     trackList: (parent, __, { dataSources }) => {
       return dataSources.trackAPI.getTracksForHome();
