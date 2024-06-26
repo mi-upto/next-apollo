@@ -1,0 +1,13 @@
+.IconHeart {
+  fill: var(--fillColor);
+  opacity: var(--opacity);
+}
+
+.like {
+  --fillColor: var(--red-500);
+  --opacity: 1;
+}
+.notLike {
+  --fillColor: var(--neutrals-black);
+  --opacity: 0.3;
+}
