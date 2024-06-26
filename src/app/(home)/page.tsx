@@ -1,6 +1,6 @@
 import { Suspense } from 'react';
 import styles from './page.module.css';
-import { PostList } from '@/app/_features/PostList';
+import { TrackList } from '@/app/_features/TrackList';
 import { ErrorBoundaryApp } from '@/app/_components/ErrorBoundary/ErrorBoundaryApp';
 import { Loading } from '@/ui/Loading';
 
@@ -16,7 +16,7 @@ const Home = () => {
               </div>
             }
           >
-            <PostList />
+            <TrackList />
           </Suspense>
         </ErrorBoundaryApp>
       </section>

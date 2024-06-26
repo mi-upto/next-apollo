@@ -2,16 +2,16 @@
 
 import React from 'react';
 import clsx from 'clsx';
-import styles from './PostList.module.css';
+import styles from './TrackList.module.css';
 import { useSuspenseQuery } from '@apollo/client';
-import { CardPost } from '@/app/_components/CardPost';
+import { TrackCard } from '@/app/_components/TrackCard';
 import Link from 'next/link';
 import { GetTracksDocument, GetTracksQuery } from '@/graphql/dist/client';
 
-type PostListProps = {
+type TrackListProps = {
   className?: string;
 };
-export const PostList = ({ className, ...props }: PostListProps) => {
+export const TrackList = ({ className, ...props }: TrackListProps) => {
   const { data: queryData } = useSuspenseQuery<GetTracksQuery>(GetTracksDocument, {
     // context: { fetchOptions: { cache: 'force-cache' } },
   });
@@ -19,18 +19,18 @@ export const PostList = ({ className, ...props }: PostListProps) => {
 
   return (
     <div className={clsx(className, styles.container)} {...props}>
-      <div className={styles.postList}>
+      <div className={styles.trackList}>
         {trackList.map((track) => {
           return (
-            <Link href={`/tracks/${track.id}`} key={track.id} className={styles.cardPostLink}>
-              <CardPost
+            <Link href={`/tracks/${track.id}`} key={track.id} className={styles.TrackCardLink}>
+              <TrackCard
                 id={track.id}
-                authorId={track.id}
+                author={track.author}
                 length={track.length}
                 modulesCount={track.modulesCount}
                 title={track.title}
                 thumbnail={track.thumbnail}
-                className={styles.cardPost}
+                className={styles.TrackCard}
               />
             </Link>
           );

@@ -1,0 +1,19 @@
+.trackList {
+  display: grid;
+  gap: var(--space-m);
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0 var(--space-m);
+  @media screen and (min-width: 768px) {
+    gap: var(--space-xl);
+  }
+  @media screen and (min-width: 1080px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.TrackCardLink {
+  transition: var(--transition-opacity);
+  &:hover {
+    opacity: var(--opacity-hover);
+  }
+}
