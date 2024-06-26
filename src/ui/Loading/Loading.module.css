@@ -2,6 +2,7 @@
   /* default value */
   width: 100px;
   height: 100px;
+  color: var(--color-primary);
 }
 
 .circle {
